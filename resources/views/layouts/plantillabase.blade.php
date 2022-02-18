@@ -11,7 +11,7 @@
     <title>CRUD PHP</title>
   </head>
   <body>
-    <h1 class="bg-primary text-white text-center">CRUD PHP, Laravel8 + jetStream</h1>
+    <h1 class="bg-primary text-white text-center">CRUD ARTICULOS LARAVEL</h1>
     <div class="container">
         @yield("contenido")
     </div>

@@ -4,7 +4,7 @@
 <a href="articulos/create" class="btn btn-primary">CREAR</a>
 <table class="table table-dark table-striped mt-4">
     <thead>
-        <tr>
+    <tr>
         <th scope="col">ID</th>
         <th scope="col">Codigo</th>
         <th scope="col">Descripción</th>
@@ -21,15 +21,17 @@
             <td>{{$articulo->descripcion}}</td>
             <td>{{$articulo->cantidad}}</td>
             <td>{{$articulo->precio}}</td>
-            <td>{{$articulo->acciones}}</td>
-            <td>
-                <form action="{{ route ("articulos.destroy", $articulo->id)}}" method="POST">
+            <td>{{$articulo->acciones}}
+            <form action="{{ route ("articulos.destroy", $articulo->id)}}" method="POST">
                 <a href="/articulos/{{$articulo->id}}/edit" class="btn btn-info">EDITAR</a>
                 @csrf
                 @method("DELETE")
                 <button type="submit" class="btn btn-danger">BORRAR</button>
-                </form>
+            </form>
             </td>
+            
+
+            
         </tr>
         @endforeach
     </tbody>

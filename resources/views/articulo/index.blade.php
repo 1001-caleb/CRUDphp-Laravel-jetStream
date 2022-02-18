@@ -7,6 +7,7 @@
     <tr>
         <th scope="col">ID</th>
         <th scope="col">Codigo</th>
+        <th scope="col">Foto</th>
         <th scope="col">Descripción</th>
         <th scope="col">Cantidad</th>
         <th scope="col">Precios</th>
@@ -18,6 +19,7 @@
         <tr>
             <td>{{$articulo->id}}</td>
             <td>{{$articulo->codigo}}</td>
+            <td>{{$articulo->foto}}</td>
             <td>{{$articulo->descripcion}}</td>
             <td>{{$articulo->cantidad}}</td>
             <td>{{$articulo->precio}}</td>

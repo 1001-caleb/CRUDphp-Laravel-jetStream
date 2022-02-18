@@ -84,6 +84,7 @@ class ArticuloController extends Controller
         $articulo = Articulo::find($id);
 
         $articulo->codigo = $request->get("codigo");
+        $articulo->foto = $request->get("foto");
         $articulo->descripcion = $request->get("descripcion");
         $articulo->cantidad = $request->get("cantidad");
         $articulo->precio= $request->get("precio");

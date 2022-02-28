@@ -21,7 +21,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0 ">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
@@ -36,8 +36,10 @@
                 </div>
             @endif
 
-            <h1 class="font-serif text-center">CRUD Articulos laravel</h1>
-            <picture><img src="icon.png" alt=""></picture>
+                <div class="flex-col">
+                    <h1 class="font-serif text-center">CRUD Articulos laravel</h1>
+                    <picture><img src="{{URL::asset("assets/icon.png")}}" alt=""></picture>
+                </div>
 
         </div>
     </body>

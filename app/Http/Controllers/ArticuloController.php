@@ -38,11 +38,14 @@ class ArticuloController extends Controller
     {
         $articulos = new Articulo();
 
-        $articulos->codigo = $request->get("codigo");
-        $articulos->foto = $request->get("foto");
-        $articulos->descripcion = $request->get("descripcion");
-        $articulos->cantidad = $request->get("cantidad");
-        $articulos->precio= $request->get("precio");
+        $articulos->codigo_regional = $request->get("codigo_regional");
+        $articulos->hoja_de_vida = $request->get("hoja_de_vida");
+        $articulos->nombre_regional = $request->get("nombre_regional");
+        $articulos->codigo_centro = $request->get("codigo_centro");
+        $articulos->nombre_centro = $request->get("nombre_centro");
+        $articulos->codigo_programa = $request->get("codigo_programa");
+        $articulos->nro_cedula = $request->get("nro_cedula");
+        $articulos->nombre_instructor = $request->get("nombre_instructor");
         
 
         $articulos->save();
@@ -83,12 +86,14 @@ class ArticuloController extends Controller
     {
         $articulo = Articulo::find($id);
 
-        $articulo->codigo = $request->get("codigo");
-        $articulo->foto = $request->get("foto");
-        $articulo->descripcion = $request->get("descripcion");
-        $articulo->cantidad = $request->get("cantidad");
-        $articulo->precio= $request->get("precio");
-
+        $articulo->codigo_regional = $request->get("codigo_regional");
+        $articulo->hoja_de_vida = $request->get("hoja_de_vida");
+        $articulo->nombre_regional = $request->get("nombre_regional");
+        $articulo->codigo_centro = $request->get("codigo_centro");
+        $articulo->nombre_centro = $request->get("nombre_centro");
+        $articulo->codigo_programa = $request->get("codigo_programa");
+        $articulo->nro_cedula = $request->get("nro_cedula");
+        $articulo->nombre_instructor = $request->get("nombre_instructor");
         $articulo->save();
         return redirect("/articulos");  
     }

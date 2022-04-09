@@ -7,10 +7,6 @@
     <tr>
         <th scope="col">id</th>
         <th scope="col">codigo_regional</th>
-        <th scope="col">hoja_de_vida</th>
-        <th scope="col">nombre_regional</th>
-        <th scope="col">codigo_centro</th>
-        <th scope="col">nombre_centro</th>
         <th scope="col">codigo_programa</th>
         <th scope="col">nro_cedula</th>
         <th scope="col">nombre_instructor</th>
@@ -22,16 +18,12 @@
         <tr>
             <td>{{$articulo->id}}</td>
             <td>{{$articulo->codigo_regional}}</td>
-            <td>{{$articulo->hoja_de_vida}}</td>
-            <td>{{$articulo->nombre_regional}}</td>
-            <td>{{$articulo->codigo_centro}}</td>
-            <td>{{$articulo->nombre_centro}}</td>
             <td>{{$articulo->codigo_programa}}</td>
             <td>{{$articulo->nro_cedula}}</td>
             <td>{{$articulo->nombre_instructor}}</td>
             <td>{{$articulo->acciones}}
             <form action="{{ route ("articulos.destroy", $articulo->id)}}" method="POST">
-                <a href="/articulos/{{$articulo->id}}/edit" class="btn btn-info">EDITAR</a>
+                <a href="/articulos/{{$articulo->id}}/edit" class="btn btn-info">VER +</a>
                 @csrf
                 @method("DELETE")
                 <button type="submit" class="btn btn-danger">BORRAR</button>

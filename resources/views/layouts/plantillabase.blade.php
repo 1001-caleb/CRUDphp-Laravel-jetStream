@@ -8,10 +8,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>CRUD PHP</title>
+    <title>Instructores CNCA</title>
+    <style>
+      .bg-naranja{
+        background-color: rgb(249 115 22);
+      }
+    </style>
   </head>
   <body>
-    <h1 class="bg-primary text-white text-center">Instructores del programa</h1>
+    <h1 class="bg-naranja text-white text-center p-2">Instructores del programa</h1>
     <div class="container">
         @yield("contenido")
     </div>

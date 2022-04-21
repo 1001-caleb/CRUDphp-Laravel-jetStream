@@ -1,4 +1,4 @@
-@extends("layouts.plantillabase");
+@extends("layouts.plantillabase")
 
 @section("contenido")
 <h2>EDITAR REGISTRO</h2>
@@ -266,6 +266,6 @@ Resolución 642 de 2004</span>
 
 
   <a href="/articulos" class="btn btn-secondary" tabindex="5">Cancelar</a>
-  <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
+  <button type="submit" class="btn bg-naranja text-white" tabindex="4">Guardar</button>
 </form>
 @endsection

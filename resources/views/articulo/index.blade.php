@@ -1,7 +1,7 @@
 @extends("layouts.plantillabase")
 
 @section("contenido")
-<a href="articulos/create" class="btn btn-primary">Añadir instructor</a>
+<a href="articulos/create" class="btn bg-naranja text-white">Añadir instructor</a>
 <table class="table table-dark table-striped mt-4">
     <thead>
     <tr>
@@ -23,10 +23,10 @@
             <td>{{$articulo->nombre_instructor}}</td>
             <td>{{$articulo->acciones}}
             <form action="{{ route ("articulos.destroy", $articulo->id)}}" method="POST">
-                <a href="/articulos/{{$articulo->id}}/edit" class="btn btn-info">VER +</a>
+                <a href="/articulos/{{$articulo->id}}/edit" class="btn bg-naranja text-white">VER +</a>
                 @csrf
                 @method("DELETE")
-                <button type="submit" class="btn btn-danger">BORRAR</button>
+                <button type="submit" class="btn btn-secondary">BORRAR</button>
             </form>
             </td>
             

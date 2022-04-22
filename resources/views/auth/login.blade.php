@@ -2,7 +2,7 @@
     <x-jet-authentication-card>
         <x-slot name="logo">
             {{-- <x-jet-authentication-card-logo /> --}}
-            <h1 class="text-xl ">Servicio CRUD de articulos</h1>
+            <h1 class="text-xl ">Iniciar sesión</h1>
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />

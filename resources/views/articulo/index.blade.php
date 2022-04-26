@@ -5,12 +5,12 @@
 <table class="table table-dark table-striped mt-4">
     <thead>
     <tr>
-        <th scope="col">id</th>
-        <th scope="col">codigo_regional</th>
-        <th scope="col">codigo_programa</th>
-        <th scope="col">nro_cedula</th>
-        <th scope="col">nombre_instructor</th>
-        <th scope="col">acciones</th>
+        <th scope="col">ID</th>
+        <th scope="col">Codigo Regional</th>
+        <th scope="col">Codigo del programa</th>
+        <th scope="col">Numero de Cedula</th>
+        <th scope="col">Nombre del instructor</th>
+        <th scope="col">Acciones</th>
     </tr>
     </thead>
     <tbody>

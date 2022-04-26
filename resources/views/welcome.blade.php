@@ -32,11 +32,11 @@
     </style>
 </head>
 
-<body class="bg-orange-500">
+<body class="bg-dark">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-naranja ">
         <div class="container-fluid d-flex justify-content-between">
-            <a class="navbar-brand fw-bold" href="#">Instructores CNCA</a>
+            <a class="navbar-brand fw-bold text-white" href="#">Instructores CNCA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,9 +63,9 @@
 
     <section class="contain p-5">
         <div>
-            <h1>Aplicativo CNCA</h1>
-            <p>Con este aplicativo se podrá organizar información acerca de los instructores del centro nacional colombo aleman</p>
-            <a href="" class="button text-decoration-none p-2 bg-naranja border text-white rounded-3">Entrar</a>
+            <h1 class="text-white">Aplicativo CNCA</h1>
+            <p class="text-white">Con este aplicativo se podrá organizar información acerca de los instructores del centro nacional colombo aleman</p>
+            <a href="{{ url('/articulos') }}" class="button text-decoration-none p-2 bg-naranja border text-white rounded-3">Entrar</a>
         </div>
         <div class="w-1">
             <img class="img-fluid" src="{{URL::asset('assets/teach.svg')}}" type="image/svg" alt="img">

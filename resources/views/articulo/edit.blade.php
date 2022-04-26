@@ -33,7 +33,7 @@
 
   <div class="mb-3">
     <label for="" class="form-label">Nombre programa</label>
-    <input id="precio" name="nombre_programa" type="text"  class="form-control" value="">
+    <input id="precio" name="nombre_programa" type="text"  class="form-control" value="{{$articulo->nombre_programa}}">
   </div>
 
   <div class="mb-3">
@@ -55,7 +55,7 @@
 
   <div class="mb-3">
     <label for="" class="form-label">Tipo de vinculación de ingreso </label>
-    <input id="precio" name="tipo_vinculacion_ingreso" type="text"  class="form-control" value="{{$articulo->tipo_vinculacion_sena}}">
+    <input id="precio" name="tipo_vinculacion_ingreso" type="text"  class="form-control" value="{{$articulo->tipo_vinculacion_ingreso}}">
   </div>
 
   <div class="mb-3">
@@ -160,12 +160,12 @@ Resolución 642 de 2004</span>
   <span>Técnologo</span>
   <div class="mb-3">
     <label for="" class="form-label">Año de obtención</label>
-    <input id="precio" name="ano_obtencion_tecnologo" type="date"  class="form-control" value="{{$articulo->ano_obtencion_titulo_tecnico}}">
+    <input id="precio" name="ano_obtencion_tecnologo" type="date"  class="form-control" value="{{$articulo->ano_obtencion_tecnologo}}">
   </div>
 
   <div class="mb-3">
     <label for="" class="form-label">Titulo obtenido</label>
-    <input id="precio" name="titulo_obtenido_tecnologo" type="text"  class="form-control" value="{{$articulo->titulo_obtencion_tecnologo}}">
+    <input id="precio" name="titulo_obtenido_tecnologo" type="text"  class="form-control" value="{{$articulo->titulo_obtenido_tecnologo}}">
   </div>
 
   <div class="mb-3">
@@ -181,7 +181,7 @@ Resolución 642 de 2004</span>
 
   <div class="mb-3">
     <label for="" class="form-label">Titulo obtenido</label>
-    <input id="precio" name="titulo_obtenido_tecnologica" type="text"  class="form-control" value="{{$articulo->titulo_obtencion_tecnologica}}">
+    <input id="precio" name="titulo_obtenido_tecnologica" type="text"  class="form-control" value="{{$articulo->titulo_obtenido_tecnologica}}">
   </div>
 
   <div class="mb-3">
@@ -192,17 +192,17 @@ Resolución 642 de 2004</span>
   <span>Pregrado Universitario</span>
   <div class="mb-3">
     <label for="" class="form-label">Año de obtención</label>
-    <input id="precio" name="ano_obtencion_pregrado" type="date"  class="form-control" value="{{$articulo->ano_obtencion_posgrado}}">
+    <input id="precio" name="ano_obtencion_pregrado" type="date"  class="form-control" value="{{$articulo->ano_obtencion_pregrado}}">
   </div>
 
   <div class="mb-3">
     <label for="" class="form-label">Titulo obtenido</label>
-    <input id="precio" name="titulo_obtenido_pregrado" type="text"  class="form-control" value="{{$articulo->titulo_obtenido_posgrado}}">
+    <input id="precio" name="titulo_obtenido_pregrado" type="text"  class="form-control" value="{{$articulo->titulo_obtenido_pregrado}}">
   </div>
 
   <div class="mb-3">
     <label for="" class="form-label">Nombre de la institución que otorga el titulo</label>
-    <input id="precio" name="ins_otorga_titulo_pregrado" type="text"  class="form-control" value="{{$articulo->ins_otorga_titulo_posgrado}}">
+    <input id="precio" name="ins_otorga_titulo_pregrado" type="text"  class="form-control" value="{{$articulo->ins_otorga_titulo_pregrado}}">
   </div>
 
   <span>Especialista</span>

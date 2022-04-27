@@ -21,7 +21,6 @@
             grid-template-columns: repeat(2, 1fr);
             place-items: center;
             padding: 1.25rem;
-            
         }
         @media screen and (max-width:425px) {
             .contain{
@@ -64,7 +63,7 @@
         </div>   
     </nav>
 
-    <section class="contain">
+    <section class="contain ">
         <div>
             <h1 class="text-white">Aplicativo CNCA</h1>
             <p class="text-white">Con este aplicativo se podrá organizar información acerca de los instructores del centro nacional colombo aleman</p>

@@ -2,6 +2,7 @@
 
 @section("contenido")
 <a href="articulos/create" class="btn bg-naranja text-white">Añadir instructor</a>
+<div class="table-responsive">
 <table class="table table-dark table-striped mt-4">
     <thead>
     <tr>
@@ -36,4 +37,6 @@
         @endforeach
     </tbody>
 </table>
+</div>
+
 @endsection

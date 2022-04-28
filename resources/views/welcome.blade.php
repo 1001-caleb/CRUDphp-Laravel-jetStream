@@ -21,6 +21,7 @@
             grid-template-columns: repeat(2, 1fr);
             place-items: center;
             padding: 1.25rem;
+            margin-top: 1rem;
         }
         @media screen and (max-width:425px) {
             .contain{

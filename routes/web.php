@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource("/articulos", "App\Http\Controllers\ArticuloController");
-
+Route::post("articulos/importar", "App\Http\Controllers\ArticuloController@importar");
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

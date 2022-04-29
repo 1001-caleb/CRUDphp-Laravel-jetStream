@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Excel;
 use App\Models\Articulo;
-
 class ArticuloController extends Controller
 {
     /**
@@ -190,4 +190,22 @@ class ArticuloController extends Controller
 
         return redirect("/articulos");
     }
+
+    public function importar(Request $request){
+        if($request->hasFile("documento")){
+            $path = $request->file("documento")->getRealPath();
+            $datos = Excel::load($path, function($reader){    
+            })->get();
+
+            if(!empty($datos) && $datos->count()){
+                $datos = $datos->toArray();
+                for($i = 0; $i < count($datos); $i++){
+                    $datosImportar[] = $datos[$i];
+                }
+            }
+            Articulo::insert($datosImportar);
+        }
+        return back();
+    }
+
 }

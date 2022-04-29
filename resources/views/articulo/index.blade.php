@@ -1,7 +1,20 @@
 @extends("layouts.plantillabase")
 
 @section("contenido")
-<a href="articulos/create" class="btn bg-naranja text-white">Añadir instructor</a>
+<div class="container">
+    <a href="articulos/create" class="btn bg-naranja text-white text-center">Añadir instructor</a>
+    <form action="{{url("articulos/importar")}}" method="POST" enctype="multipart/form-data">
+    @csrf
+    <div class="col-md-6 mt-3">
+        <input type="file" name="documento">
+    </div>
+    <div class="col-md-6">
+        <button class="btn bg-naranja text-white" type="submit">Importar</button>
+    </div>
+    </form>
+</div>
+
+
 <div class="table-responsive">
 <table class="table table-dark table-striped mt-4">
     <thead>

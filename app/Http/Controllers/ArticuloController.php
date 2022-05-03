@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Excel;
+use Maatwebsite\Excel\Facades\Excel;
 use App\Models\Articulo;
 class ArticuloController extends Controller
 {
@@ -14,7 +14,7 @@ class ArticuloController extends Controller
      */
     public function index()
     {
-        $articulos = Articulo::all();
+        $articulos = Articulo::paginate(5);
         return view("articulo.index")->with("articulos", $articulos);
     }
 
@@ -194,7 +194,7 @@ class ArticuloController extends Controller
     public function importar(Request $request){
         if($request->hasFile("documento")){
             $path = $request->file("documento")->getRealPath();
-            $datos = Excel::load($path, function($reader){    
+            $datos = Excel::import($path, function($reader){    
             })->get();
 
             if(!empty($datos) && $datos->count()){

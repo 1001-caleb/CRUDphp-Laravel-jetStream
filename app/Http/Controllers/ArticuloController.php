@@ -61,8 +61,10 @@ class ArticuloController extends Controller
         $articulos->vinculacion_proyectos_investigacion = $request->get("vinculacion_proyectos_investigacion");
         $articulos->publicaciones_informador = $request->get("publicaciones_informador");
         $articulos->publicaciones_otros_medios = $request->get("publicaciones_otros_medios");
-        $articulos->experiencia_profesional = $request->get("experiencia_profesional");
-        $articulos->experiencia_docencia = $request->get("experiencia_docencia");
+        $articulos->inicio_experiencia_profesional = $request->get("inicio_experiencia_profesional");
+        $articulos->fin_experiencia_profesional = $request->get("fin_experiencia_profesional");
+        $articulos->inicio_experiencia_docencia = $request->get("inicio_experiencia_docencia");
+        $articulos->fin_experiencia_docencia = $request->get("fin_experiencia_docencia");
         $articulos->ano_obtencion_tecnico = $request->get("ano_obtencion_tecnico");
         $articulos->titulo_obtenido_tecnico = $request->get("titulo_obtenido_tecnico");
         $articulos->ins_otorga_titulo_tecnico = $request->get("ins_otorga_titulo_tecnico");
@@ -148,8 +150,10 @@ class ArticuloController extends Controller
         $articulo->vinculacion_proyectos_investigacion = $request->get("vinculacion_proyectos_investigacion");
         $articulo->publicaciones_informador = $request->get("publicaciones_informador");
         $articulo->publicaciones_otros_medios = $request->get("publicaciones_otros_medios");
-        $articulo->experiencia_profesional = $request->get("experiencia_profesional");
-        $articulo->experiencia_docencia = $request->get("experiencia_docencia");
+        $articulo->inicio_experiencia_profesional = $request->get("inicio_experiencia_profesional");
+        $articulo->fin_experiencia_profesional = $request->get("fin_experiencia_profesional");
+        $articulo->inicio_experiencia_docencia = $request->get("inicio_experiencia_docencia");
+        $articulo->fin_experiencia_docencia = $request->get("fin_experiencia_docencia");
         $articulo->ano_obtencion_tecnico = $request->get("ano_obtencion_tecnico");
         $articulo->titulo_obtenido_tecnico = $request->get("titulo_obtenido_tecnico");
         $articulo->ins_otorga_titulo_tecnico = $request->get("ins_otorga_titulo_tecnico");

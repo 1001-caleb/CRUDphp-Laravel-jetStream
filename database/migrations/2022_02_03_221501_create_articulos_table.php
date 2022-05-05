@@ -38,8 +38,10 @@ class CreateArticulosTable extends Migration
             $table->string("vinculacion_proyectos_investigacion");
             $table->string("publicaciones_informador");
             $table->string("publicaciones_otros_medios");
-            $table->string("experiencia_profesional");
-            $table->string("experiencia_docencia");
+            $table->date("inicio_experiencia_profesional");
+            $table->date("fin_experiencia_profesional");
+            $table->date("inicio_experiencia_docencia");
+            $table->date("fin_experiencia_docencia");
             $table->date("ano_obtencion_tecnico");
             $table->string("titulo_obtenido_tecnico");
             $table->string("ins_otorga_titulo_tecnico");

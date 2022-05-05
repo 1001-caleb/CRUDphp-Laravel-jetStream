@@ -16,7 +16,7 @@
 
   <div class="mb-3">
     <label for="" class="form-label">Codigo centro</label>
-    <input id="cantidad" name="codigo_centro" type="number" class="form-control">
+    <input id="cantidad" name="codigo_centro" type="text" class="form-control">
   </div>
 
   <div class="mb-3">

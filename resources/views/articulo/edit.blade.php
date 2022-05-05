@@ -132,12 +132,20 @@ Resolución 642 de 2004</span>
 
   <span>AÑOS DE EXPERIENCIA</span>
   <div class="mb-3">
-    <label for="" class="form-label">Experiencia profesional</label>
-    <input id="precio" name="experiencia_profesional" type="text"  class="form-control" value="{{$articulo->experiencia_profesional}}">
+    <label for="" class="form-label">Inicio xperiencia profesional</label>
+    <input id="precio" name="inicio_experiencia_profesional" type="date"  class="form-control" value="{{$articulo->inicio_experiencia_profesional}}">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Experiencia docencia/formación</label>
-    <input id="precio" name="experiencia_docencia" type="text"  class="form-control" value="{{$articulo->experiencia_docencia}}">
+    <label for="" class="form-label">Fin xperiencia profesional</label>
+    <input id="precio" name="fin_experiencia_profesional" type="date"  class="form-control" value="{{$articulo->fin_experiencia_profesional}}">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Inicio Experiencia docencia/formación</label>
+    <input id="precio" name="inicio_experiencia_docencia" type="date"  class="form-control" value="{{$articulo->inicio_experiencia_docencia}}">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Fin Experiencia docencia/formación</label>
+    <input id="precio" name="fin_experiencia_docencia" type="date"  class="form-control" value="{{$articulo->fin_experiencia_docencia}}">
   </div>
 
   <span>Evolución de cualificación - Registrada en SIGEP</span>

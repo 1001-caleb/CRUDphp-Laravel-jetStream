@@ -132,19 +132,19 @@ Resolución 642 de 2004</span>
 
   <span>AÑOS DE EXPERIENCIA</span>
   <div class="mb-3">
-    <label for="" class="form-label">Inicio xperiencia profesional</label>
+    <label for="" class="form-label">Inicio experiencia profesional</label>
     <input id="precio" name="inicio_experiencia_profesional" type="date"  class="form-control" value="{{$articulo->inicio_experiencia_profesional}}">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Fin xperiencia profesional</label>
+    <label for="" class="form-label">Fin experiencia profesional</label>
     <input id="precio" name="fin_experiencia_profesional" type="date"  class="form-control" value="{{$articulo->fin_experiencia_profesional}}">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Inicio Experiencia docencia/formación</label>
+    <label for="" class="form-label">Inicio experiencia docencia/formación</label>
     <input id="precio" name="inicio_experiencia_docencia" type="date"  class="form-control" value="{{$articulo->inicio_experiencia_docencia}}">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Fin Experiencia docencia/formación</label>
+    <label for="" class="form-label">Fin experiencia docencia/formación</label>
     <input id="precio" name="fin_experiencia_docencia" type="date"  class="form-control" value="{{$articulo->fin_experiencia_docencia}}">
   </div>
 

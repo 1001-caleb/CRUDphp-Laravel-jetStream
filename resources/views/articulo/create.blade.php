@@ -132,12 +132,20 @@
 
   <span>AÑOS DE EXPERIENCIA</span>
   <div class="mb-3">
-    <label for="" class="form-label">Experiencia profesional</label>
-    <input id="precio" name="experiencia_profesional" type="text"  class="form-control">
+    <label for="" class="form-label">Inicio de experiencia profesional</label>
+    <input id="precio" name="inicio_experiencia_profesional" type="date"  class="form-control">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Experiencia docencia/formación</label>
-    <input id="precio" name="experiencia_docencia" type="text"  class="form-control">
+    <label for="" class="form-label">Fin de experiencia profesional</label>
+    <input id="precio" name="fin_experiencia_profesional" type="date"  class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Inicio de experiencia docencia/formación</label>
+    <input id="precio" name="inicio_experiencia_docencia" type="date" inicio_ class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Fin de experiencia docencia/formación</label>
+    <input id="precio" name="fin_experiencia_docencia" type="date" inicio_ class="form-control">
   </div>
 
   <span>Evolución de cualificación - Registrada en SIGEP</span>

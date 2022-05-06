@@ -36,16 +36,6 @@
                 <td>{{$articulo->codigo_programa}}</td>
                 <td>{{$articulo->nro_cedula}}</td>
                 <td>{{$articulo->nombre_instructor}}</td>
-               
-                <td>{{$articulo->acciones}}
-                    <form action="{{ route ("articulos.destroy", $articulo->id)}}" method="POST">
-                        <a href="/articulos/{{$articulo->id}}/edit" class="btn bg-naranja text-white">VER +</a>
-                        @csrf
-                        @method("DELETE")
-                        <button type="submit" class="btn btn-secondary">BORRAR</button>
-                    </form>
-                </td>
-
 
                 <?php
                 $inicio = "$articulo->inicio_experiencia_profesional";
@@ -54,8 +44,6 @@
                 $datetime1 = new DateTime($inicio);
                 $datetime2 = new DateTime($fin);
 
-
-                
                 $diferencia = $datetime2->diff($datetime1);
 
                 
@@ -64,8 +52,16 @@
                 $intervalAnos = $diferencia->format("%y") * 12;
                 $experiencia = $intervalMeses+$intervalAnos;
                
-                echo "".($experiencia)." meses";
+                echo "<td>$experiencia meses</td>";
                 ?>
+                <td>{{$articulo->acciones}}
+                    <form action="{{ route ("articulos.destroy", $articulo->id)}}" method="POST">
+                        <a href="/articulos/{{$articulo->id}}/edit" class="btn bg-naranja text-white">VER +</a>
+                        @csrf
+                        @method("DELETE")
+                        <button type="submit" class="btn btn-secondary">BORRAR</button>
+                    </form>
+                </td>
 
             </tr>
             @endforeach

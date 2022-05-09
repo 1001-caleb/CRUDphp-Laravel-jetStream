@@ -38,21 +38,21 @@
                 <td>{{$articulo->nombre_instructor}}</td>
 
                 <?php
-                $inicio = "$articulo->inicio_experiencia_profesional";
-                $fin = "$articulo->fin_experiencia_profesional";
+                $inicio_p = "$articulo->inicio_experiencia_profesional";
+                $fin_p = "$articulo->fin_experiencia_profesional";
 
-                $datetime1 = new DateTime($inicio);
-                $datetime2 = new DateTime($fin);
+                $datetime1_p = new DateTime($inicio_p);
+                $datetime2_p = new DateTime($fin_p);
 
-                $diferencia = $datetime2->diff($datetime1);
+                $diferencia_p = $datetime2_p->diff($datetime1_p);
 
                 
-                $intervalMeses = $diferencia->format("%m");
+                $intervalMeses_p = $diferencia_p->format("%m");
                 
-                $intervalAnos = $diferencia->format("%y") * 12;
-                $experiencia = $intervalMeses+$intervalAnos;
+                $intervalAnos_p = $diferencia_p->format("%y") * 12;
+                $experiencia_p = $intervalMeses_p+$intervalAnos_p;
                
-                echo "<td>$experiencia meses</td>";
+                echo "<td>$experiencia_p meses</td>";
                 ?>
                 <td>{{$articulo->acciones}}
                     <form action="{{ route ("articulos.destroy", $articulo->id)}}" method="POST">

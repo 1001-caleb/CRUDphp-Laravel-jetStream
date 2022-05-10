@@ -14,6 +14,14 @@
     </form>
 </div>
 
+<div class="d-md-flex justify-content-md-end">
+    <form action="{{ route("articulos.index") }}" method="GET">
+        <div class="btn-group">
+            <input type="text" name="busqueda" class="form-control">
+            <input type="submit" value="Enviar" class="btn bg-naranja text-white">
+        </div>
+    </form>
+</div>
 
 <div class="table-responsive">
     <table class="table table-dark table-striped mt-4">

@@ -19,7 +19,11 @@ class ArticuloController extends Controller
         $articulos = Articulo::where("nombre_instructor", "LIKE","%".$busqueda."%")
             ->orWhere("codigo_regional", "LIKE","%".$busqueda."%")
             ->paginate(5);
-        return view("articulo.index")->with("articulos", $articulos);
+        
+        $data =[
+            "busqueda"=>$busqueda
+        ];    
+        return view("articulo.index", $data)->with("articulos", $articulos);
     }
 
     /**

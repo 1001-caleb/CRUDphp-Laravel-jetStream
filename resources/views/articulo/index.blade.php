@@ -94,7 +94,7 @@
     </table>
 </div>
 <div class="d-flex justify-content-end">
-    {!! $articulos->links() !!}
+    {!! $articulos->appends(["busqueda"=>$busqueda]) !!}
 </div>
 
 @endsection

@@ -25,6 +25,7 @@
                 <th scope="col">Numero de Cedula</th>
                 <th scope="col">Nombre del instructor</th>
                 <th scope="col">XP profesional</th>
+                <th scope="col">XP docencia</th>
                 <th scope="col">Acciones</th>
             </tr>
         </thead>

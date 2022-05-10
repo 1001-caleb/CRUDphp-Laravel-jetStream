@@ -53,6 +53,22 @@
                 $experiencia_p = $intervalMeses_p+$intervalAnos_p;
                
                 echo "<td>$experiencia_p meses</td>";
+
+                $inicio_d = "$articulo->inicio_experiencia_docencia";
+                $fin_d = "$articulo->fin_experiencia_docencia";
+
+                $datetime1_d = new DateTime($inicio_d);
+                $datetime2_d = new DateTime($fin_d);
+
+                $diferencia_d = $datetime2_d->diff($datetime1_d);
+
+                
+                $intervalMeses_d = $diferencia_d->format("%m");
+                
+                $intervalAnos_d = $diferencia_d->format("%y") * 12;
+                $experiencia_d = $intervalMeses_d+$intervalAnos_d;
+               
+                echo "<td>$experiencia_d meses</td>";
                 ?>
                 <td>{{$articulo->acciones}}
                     <form action="{{ route ("articulos.destroy", $articulo->id)}}" method="POST">

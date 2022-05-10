@@ -18,7 +18,7 @@
     <form action="{{ route("articulos.index") }}" method="GET">
         <div class="btn-group">
             <input type="text" name="busqueda" class="form-control">
-            <input type="submit" value="Enviar" class="btn bg-naranja text-white">
+            <input type="submit" value="Buscar" class="btn bg-naranja text-white">
         </div>
     </form>
 </div>

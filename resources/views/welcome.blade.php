@@ -71,7 +71,7 @@
             <a href="{{ url('/articulos ') }}" class="button text-decoration-none p-2 bg-naranja border text-white rounded-3">Entrar</a>
         </div>
         <div class="w-1">
-            <img class="img-fluid" src="{{URL::asset('assets/teach.svg')}}" type="image/svg" alt="img">
+            <img class="img-fluid" src="{{URL::asset('assets/study.png')}}" type="image/svg" alt="img">
         </div>
     </section>
 </body>

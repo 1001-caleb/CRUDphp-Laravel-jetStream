@@ -13,6 +13,10 @@
       .bg-naranja{
         background-color: rgb(249 115 22);
       }
+     .form-control:focus {
+        border-color: #f97316;
+        box-shadow: 0px 0px 14px 1px #F97316
+    } 
     </style>
   </head>
   <body>

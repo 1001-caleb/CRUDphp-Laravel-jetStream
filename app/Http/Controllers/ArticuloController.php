@@ -13,9 +13,12 @@ class ArticuloController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $articulos = Articulo::paginate(5);
+        $busqueda = $request->busqueda;
+        $articulos = Articulo::where("nombre_instructor", "LIKE","%".$busqueda."%")
+            ->orWhere("codigo_regional", "LIKE","%".$busqueda."%")
+            ->paginate(5);
         return view("articulo.index")->with("articulos", $articulos);
     }
 

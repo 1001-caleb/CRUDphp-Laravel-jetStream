@@ -6,7 +6,7 @@
     <form action="{{url("articulos/importar")}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="col-md-6 mt-3">
-            <input type="file" name="documento">
+            <input class="text-white" type="file" name="documento">
         </div>
         <div class="col-md-6">
             <button class="btn bg-naranja text-white" type="submit">Importar</button>
@@ -14,7 +14,7 @@
     </form>
 </div>
 
-<div class="d-md-flex justify-content-md-end">
+<div class="d-md-flex justify-content-md-end mt-4">
     <form action="{{ route("articulos.index") }}" method="GET">
         <div class="btn-group">
             <input type="text" name="busqueda" class="form-control">
@@ -28,7 +28,7 @@
         <thead>
             <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Codigo Regional</th>
+                <th scope="col">Codigo Centro</th>
                 <th scope="col">Codigo del programa</th>
                 <th scope="col">Numero de Cedula</th>
                 <th scope="col">Nombre del instructor</th>
@@ -41,7 +41,7 @@
             @foreach ($articulos as $articulo)
             <tr>
                 <td>{{$articulo->id}}</td>
-                <td>{{$articulo->codigo_regional}}</td>
+                <td>{{$articulo->codigo_centro}}</td>
                 <td>{{$articulo->codigo_programa}}</td>
                 <td>{{$articulo->nro_cedula}}</td>
                 <td>{{$articulo->nombre_instructor}}</td>

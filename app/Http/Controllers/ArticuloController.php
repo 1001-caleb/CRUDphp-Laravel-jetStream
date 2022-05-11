@@ -17,7 +17,7 @@ class ArticuloController extends Controller
     {
         $busqueda = $request->busqueda;
         $articulos = Articulo::where("nombre_instructor", "LIKE","%".$busqueda."%")
-            ->orWhere("codigo_regional", "LIKE","%".$busqueda."%")
+            ->orWhere("codigo_centro", "LIKE","%".$busqueda."%")
             ->paginate(5);
         
         $data =[

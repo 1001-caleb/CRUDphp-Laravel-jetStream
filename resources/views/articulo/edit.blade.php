@@ -46,7 +46,7 @@
     <input id="precio" name="nombre_instructor" type="text"  class="form-control" value="{{$articulo->nombre_instructor}}">
   </div>
 
-  <span>VINCULACIÓN</span>
+  <span class="subtitulo">VINCULACIÓN</span>
 
   <div class="mb-3">
     <label for="" class="form-label">Año de ingreso al SENA</label>
@@ -68,7 +68,7 @@
     <input id="precio" name="tipo_vinculacion_actual" type="text"  class="form-control" value="{{$articulo->tipo_vinculacion_actual}}">
   </div>
 
-  <span>SSEMI</span>
+  <span class="subtitulo">SSEMI</span>
 
   <div class="mb-3">
     <label for="" class="form-label">Grado inicial</label>
@@ -79,7 +79,7 @@
     <input id="precio" name="grado_actual" type="text"  class="form-control" value="{{$articulo->grado_actual}}">
   </div>
 
-  <span>Distribución de Tiempo
+  <span  class="subtitulo"F>Distribución de Tiempo
 Dedicación semanal (horas) al programa - 
 Resolución 642 de 2004</span>
 
@@ -109,7 +109,7 @@ Resolución 642 de 2004</span>
     <input id="precio" name="porcentaje_hora_dedicacion_programa" type="text"  class="form-control" value="{{$articulo->porcentaje_hora_dedicacion_programa}}">
   </div>
 
-  <span>Producción del Instructor Registrada y Verificable en CVLAC / SEMI</span>
+  <span class="subtitulo"F>Producción del Instructor Registrada y Verificable en CVLAC / SEMI</span>
   <div class="mb-3">
     <label for="" class="form-label">Producción de Material Didáctico como apoyo a la formación</label>
     <input id="precio" name="produccion_material_didactico" type="text"  class="form-control" value="{{$articulo->produccion_material_didactico}}">
@@ -130,7 +130,7 @@ Resolución 642 de 2004</span>
     <input id="precio" name="publicaciones_otros_medios" type="text"  class="form-control" value="{{$articulo->publicaciones_otros_medios}}">
   </div>
 
-  <span>AÑOS DE EXPERIENCIA</span>
+  <span class="subtitulo"F>AÑOS DE EXPERIENCIA</span>
   <div class="mb-3">
     <label for="" class="form-label">Inicio experiencia profesional</label>
     <input id="precio" name="inicio_experiencia_profesional" type="date"  class="form-control" value="{{$articulo->inicio_experiencia_profesional}}">
@@ -148,8 +148,8 @@ Resolución 642 de 2004</span>
     <input id="precio" name="fin_experiencia_docencia" type="date"  class="form-control" value="{{$articulo->fin_experiencia_docencia}}">
   </div>
 
-  <span>Evolución de cualificación - Registrada en SIGEP</span>
-  <span>Técnico</span>
+  <span class="subtitulo"F>Evolución de cualificación - Registrada en SIGEP</span> <br>
+  <span class="subtitulo">Técnico</span>
   <div class="mb-3">
     <label for="" class="form-label">Año de obtención</label>
     <input id="precio" name="ano_obtencion_tecnico" type="date"  class="form-control" value="{{$articulo->ano_obtencion_tecnico}}">
@@ -165,7 +165,7 @@ Resolución 642 de 2004</span>
     <input id="precio" name="ins_otorga_titulo_tecnico" type="text"  class="form-control" value="{{$articulo->ins_otorga_titulo_tecnico}}">
   </div>
 
-  <span>Técnologo</span>
+  <span class="subtitulo"F>Técnologo</span>
   <div class="mb-3">
     <label for="" class="form-label">Año de obtención</label>
     <input id="precio" name="ano_obtencion_tecnologo" type="date"  class="form-control" value="{{$articulo->ano_obtencion_tecnologo}}">
@@ -181,7 +181,7 @@ Resolución 642 de 2004</span>
     <input id="precio" name="ins_otorga_titulo_tecnologo" type="text"  class="form-control" value="{{$articulo->ins_otorga_titulo_tecnologo}}">
   </div>
 
-  <span>Especialización Tecnologica</span>
+  <span class="subtitulo"F>Especialización Tecnologica</span>
   <div class="mb-3">
     <label for="" class="form-label">Año de obtención</label>
     <input id="precio" name="ano_obtencion_tecnologica" type="date"  class="form-control" value="{{$articulo->ano_obtencion_tecnologica}}">
@@ -197,7 +197,7 @@ Resolución 642 de 2004</span>
     <input id="precio" name="ins_otorga_titulo_tecnologica" type="text"  class="form-control" value="{{$articulo->ins_otorga_titulo_tecnologo}}">
   </div>
 
-  <span>Pregrado Universitario</span>
+  <span class="subtitulo"F>Pregrado Universitario</span>
   <div class="mb-3">
     <label for="" class="form-label">Año de obtención</label>
     <input id="precio" name="ano_obtencion_pregrado" type="date"  class="form-control" value="{{$articulo->ano_obtencion_pregrado}}">
@@ -213,7 +213,7 @@ Resolución 642 de 2004</span>
     <input id="precio" name="ins_otorga_titulo_pregrado" type="text"  class="form-control" value="{{$articulo->ins_otorga_titulo_pregrado}}">
   </div>
 
-  <span>Especialista</span>
+  <span class="subtitulo"F>Especialista</span>
   <div class="mb-3">
     <label for="" class="form-label">Año de obtención</label>
     <input id="precio" name="ano_obtencion_especialista" type="date"  class="form-control" value="{{$articulo->ano_obtencion_especialista}}">
@@ -229,7 +229,7 @@ Resolución 642 de 2004</span>
     <input id="precio" name="ins_otorga_titulo_especialista" type="text"  class="form-control" value="{{$articulo->ins_otorga_titulo_especialista}}">
   </div>
 
-  <span>Maestria</span>
+  <span class="subtitulo"F>Maestria</span>
   <div class="mb-3">
     <label for="" class="form-label">Año de obtención</label>
     <input id="precio" name="ano_obtencion_maestria" type="date"  class="form-control" value="{{$articulo->ano_obtencion_maestria}}">
@@ -245,7 +245,7 @@ Resolución 642 de 2004</span>
     <input id="precio" name="ins_otorga_titulo_maestria" type="text"  class="form-control" value="{{$articulo->ins_otorga_titulo_maestria}}">
   </div>
 
-  <span>Doctorado</span>
+  <span class="subtitulo"F>Doctorado</span>
   <div class="mb-3">
     <label for="" class="form-label">Año de obtención</label>
     <input id="precio" name="ano_obtencion_doctorado" type="date"  class="form-control" value="{{$articulo->ano_obtencion_doctorado}}">
@@ -261,7 +261,7 @@ Resolución 642 de 2004</span>
     <input id="precio" name="ins_otorga_titulo_doctorado" type="text"  class="form-control" value="{{$articulo->ins_otorga_titulo_doctorado}}">
   </div>
 
-  <span>Estudios en curso</span>
+  <span class="subtitulo"F>Estudios en curso</span>
   <div class="mb-3">
     <label for="" class="form-label">Nombre del programa</label>
     <input id="precio" name="nombre_programa_encurso" type="text"  class="form-control" value="{{$articulo->nombre_programa_encurso}}">

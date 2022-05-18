@@ -34,6 +34,7 @@
                 <th scope="col">Nombre del instructor</th>
                 <th scope="col">XP profesional</th>
                 <th scope="col">XP docencia</th>
+                <th scope="col">XP total</th>
                 <th scope="col">Acciones</th>
             </tr>
         </thead>
@@ -79,22 +80,17 @@
                
                 echo "<td>$experiencia_d meses</td>";
 
-                function check_in_range($fecha_inicio, $fecha_fin, $fecha){
-
-                    $fecha_inicio = strtotime($fecha_inicio);
-                    $fecha_fin = strtotime($fecha_fin);
-                    $fecha = strtotime($fecha);
                
-                    if(($fecha >= $fecha_inicio) && ($fecha <= $fecha_fin)) {
+                    if(($datetime1_p >= $datetime1_d) && ($datetime1_p <= $datetime2_d) || ($datetime2_p >= $datetime1_d) && ($datetime2_p <= $datetime2_d)) {
                
-                        return true;
+                        echo "<td>Experiencia cruzada</td>";
                
                     } else {
                
-                        return false;
+                        echo "<td>Experiencia no cruzada</td>";
                
                     }
-                }
+                
 
                 ?>
                 <td>{{$articulo->acciones}}

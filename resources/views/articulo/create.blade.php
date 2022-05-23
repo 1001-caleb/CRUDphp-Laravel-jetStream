@@ -84,10 +84,6 @@
     <input id="precio" name="horas_vinculacion_sena" type="text"  class="form-control">
   </div>
 
-  <div class="mb-3">
-    <label for="" class="form-label">Total de horas de vinculación al SENA</label>
-    <input id="precio" name="horas_vinculacion_sena" type="text"  class="form-control">
-  </div>
 
   <div class="mb-3">
     <label for="" class="form-label">Docencia</label>
